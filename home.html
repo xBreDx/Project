@@ -1,1 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Disease Checker</h1>
+    <form id="symptomForm" action="/checkDisease" method="post">
+        <label for="symptoms">Select Symptoms:</label><br>
+        <select id="symptoms" name="symptoms">
+            <option value="Fever">Fever</option>
+            <option value="Cough">Cough</option>
+            <option value="Body Aches">Body Aches</option>
+            <option value="Runny Nose">Runny Nose</option>
+            <option value="Sneezing">Sneezing</option>
+            <option value="Sore Throat">Sore Throat</option>
+        </select><br><br>
+        <button type="submit">Check Disease</button>
+    </form>
+    <div id="result"></div>
+</body>
+</html>
 
