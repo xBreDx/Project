@@ -4,13 +4,13 @@ public class Disease {
   private String Treatment;
   
 
-public Disease (String name, String symptoms, String treatment) {
-  this.Name = name;
+public Disease (String symptoms, String treatment) {
   this.Symptoms = symptoms;
   this.Treatment = treatment;
 }
   public Disease() {
-    
+    Symptoms = "";
+    Treatment = "";
   }
    public String getName() {
     return this.Name;
