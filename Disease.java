@@ -1,39 +1,43 @@
-public class Disease {
-  private String Name;
-  private String Symptoms;
-  private String Treatment;
-  
+public class Disease extends Account{
+    private String Name;
+    private String Symptoms;
+    private String Treatment;
 
-public Disease (String symptoms, String treatment) {
-  this.Symptoms = symptoms;
-  this.Treatment = treatment;
+
+    public Disease (String name, String symptoms, String treatment) {
+        this.Name = name;
+        this.Symptoms = symptoms;
+        this.Treatment = treatment;
+    }
+    public Disease() {
+        Name = "";
+        Symptoms = "";
+        Treatment = "";
+
+    }
+    public String getName() {
+        return Name;
+    }
+
+    public String getSymptoms() {
+        return Symptoms;
+    }
+
+    public String getTreatment(){
+        return Treatment;
+    }
+
+    public void setName(String name) {
+        Name = name;
+    }
+
+    public void setSymptoms(String symptoms) {
+        Symptoms = symptoms;
+    }
+
+    public void setTreatment(String treatment){
+        Treatment = treatment;
+    }
+
 }
-  public Disease() {
-    Symptoms = "";
-    Treatment = "";
-  }
-   public String getName() {
-    return this.Name;
-  }
 
-  public String getSymptoms() {
-    return this.Symptoms;
-  }
-
-  public String getTreatment(){
-    return this.Treatment;
-  }
-
-  public void setName(String name) {
-    this.Name = name;
-  }
-
-  public void setSymptoms(String symptoms) {
-    this.Symptoms = symptoms;
-  }
-
-  public void setTreatment(String treatment){
-    this.Treatment = treatment;
-  }
-  
-}
