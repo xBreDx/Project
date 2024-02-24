@@ -1,0 +1,20 @@
+public class SymptomTracker extends Account {
+    private int SymptomProgress;
+
+    public SymptomTracker(int symptomProgress) {
+        String savedDiagnosis = super.getSavedDiagnosis();
+        this.SymptomProgress = symptomProgress;
+    }
+    public SymptomTracker() {
+        SymptomProgress = 0;
+    }
+
+    public int getSymptomProgress() {
+        return SymptomProgress;
+    }
+
+    public void setSymptomProgress(int symptomProgress) {
+        SymptomProgress = symptomProgress;
+    }
+}
+
