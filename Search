@@ -1,0 +1,36 @@
+public class Search {
+    private String Symptoms;
+    private String Severity;
+    private String Duration;
+
+    public Search(String symptoms, String severity, String duration) {
+        this.Symptoms = symptoms;
+        this.Severity = severity;
+        this.Duration = duration;
+    }
+public Search () {
+    Symptoms = "";
+    Severity = "";
+    Duration = "";
+}
+
+    public String getSymptoms() {
+        return Symptoms;
+    }
+    public String getSeverity() {
+        return Severity;
+}
+    public String getDuration() {
+        return Duration;
+    }
+public void setSymptoms(String symptoms) {
+        Symptoms = symptoms;
+}
+public void setSeverity(String severity) {
+        Severity = severity;
+}
+public void setDuration(String duration) {
+        Duration = duration;
+}
+
+}
