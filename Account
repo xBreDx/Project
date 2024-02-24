@@ -1,0 +1,52 @@
+public class Account {
+    private String Username;
+    private String Email;
+    private String Password;
+    private String SavedDiagnosis;
+
+    public Account() {
+        Username = "";
+        Email = "";
+        Password = "";
+    }
+    public Account(String username, String email, String password, String savedDiagnosis) {
+        this.Username = username;
+        this.Email = email;
+        this.Password = password;
+        this.SavedDiagnosis = savedDiagnosis;
+    }
+    public String getSavedDiagnosis() {
+        return SavedDiagnosis;
+    }
+        public String getUsername() {
+        return Username;
+        }
+        public String getEmail() {
+        return Email;
+        }
+        public String getPassword() {
+        return Password;
+        }
+        public void setUsername(String username) {
+        if(username.isEmpty()) {
+            System.out.println("Error please enter username");
+        }
+        Username = username;
+        }
+        public void setEmail(String email) {
+        if(email.isEmpty()) {
+            System.out.println("Error please enter email");
+        }
+        Email = email;
+        }
+        public void setPassword(String password) {
+        if(password.isEmpty()) {
+            System.out.println("Error please enter password");
+            }
+        Password = password;
+        }
+
+    public void setSavedDiagnosis(String symptoms, String treatment, String name) {
+        SavedDiagnosis = symptoms + treatment + name;
+    }
+}
